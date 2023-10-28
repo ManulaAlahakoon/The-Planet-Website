@@ -1,0 +1,144 @@
+*,*::after,*::before {
+
+
+	box-sizing:boder-box;
+
+
+}
+
+.modalSS{
+
+	/*display:none;*/
+
+	position:fixed;
+
+	top:50%;							/*Below three lines are great because we can take something in to the middle in the screen easily*/
+	left:50%;
+	transform:translate(-50%,-50%) scale(0) ; 
+
+	transition:200ms ease-in-out;
+
+	border:1px solid black;
+	border-radius:10px;
+	z-index:10;
+	background-color:white;
+	max-width:80%;
+	width:450px;
+
+	
+}
+
+#modalSS.active{
+
+	transform:translate(-50%,-50%) scale(1);
+	
+	/*display:block;*/
+}
+
+.modal-header-SS{
+
+	padding: 10px 15px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	border-bottom:1px solid black;
+
+}
+
+.modal-header-SS .title{
+
+	font-size:1.25rem;
+	font-weight:bold;
+
+}
+
+.modal-header-SS .close-button-SS{
+
+	cursor:pointer;
+
+	outline:none;          /* I didn't saw a much change in screen */
+
+	border:none;
+	background:none;	   /* background:none;	*/
+	font-size:1.75rem;
+	font-weight:bold;
+
+}
+
+.modal-body-SS{
+
+	padding:10px 15px;
+
+}
+
+#overlaySS{
+
+	position:fixed;
+	opacity:0;
+	                      /*opacity:0;*/
+	                      /*Below four lines can set the full screen*/
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+
+	transition:200ms ease-in-out;
+
+	background-color:rgba(0,0,0,0.5);
+    pointer-events:none;  
+	                                /* pointer-events:none; Because of the .overlay , buttons in the background becomes unclikable. 
+	                                   After adding "pointer-events:none;"  button becomes clikable again	*/
+
+
+}
+
+#overlaySS.active{
+
+	opacity:1;
+	pointer-events:all;
+
+}
+
+
+.close-button-SS:hover{
+
+	color:red;
+
+}
+/*
+.inputBox{
+
+	width:100%;
+	
+	text-align:center;
+	font-size:25px;
+	
+
+
+}
+
+legend{
+
+	color:red;
+
+}
+
+legend:hover{
+
+	color:green;
+
+}
+
+input[type=submit]{
+
+
+	width: 100%;
+	text-align:center;
+	background-color:green;
+	font-size:25px;
+	padding:5px 5px;
+
+
+
+}
+*/

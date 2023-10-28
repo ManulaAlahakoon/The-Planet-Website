@@ -1,0 +1,310 @@
+*{
+	box-sizing: boder-box;
+
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+
+}
+
+.background-video{
+	position: fixed;  /*Changed here from absolute to fixed to remove the white space came under background */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+	filter: brightness(90%);
+	
+
+}
+h1{
+
+	color: white;
+	font-size: 44px;
+	line-height: 0;
+	letter-spacing: 0.377em;
+	font-weight: 500;
+	font-style: normal;
+	
+}
+
+header{
+
+	min-height: 100vh;                
+	display: grid;
+	place-items: center;   
+	
+
+}
+
+
+    /*The place-items property in CSS is shorthand for the 
+	  align-items and justify-items properties, combining them into a 
+	  single declaration.
+	  The property accepts dual values, the first for align-items and 
+	  the second for justify-items. As a refresher, align-items aligns content 
+	  along the vertical (column) axis whereas justify-items aligns along
+	   the horizontal (row) axis.*/
+
+	/*   display: grid;                                   
+		 place-items: start center;
+
+         EQUALS TO
+			
+		 display: grid;
+         align-items: start;
+         justify-items: center;
+        
+    */
+
+	/*   display: grid;
+  		 place-items: start;
+
+         EQUALS TO
+			
+		 isplay: grid;
+         align-items: start;
+         justify-items: start;
+        
+    */
+
+.preloader{
+
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: white;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	transition: 2s linear;
+}
+
+
+/*Navigation Bar*/
+
+
+ul.menu{
+	list-style-type:none;
+
+}
+ul.menu li a {
+	text-decoration: none;
+
+}
+
+nav{
+	background-color:white;
+	box-shadow:0 5px 10px rgba(0, 0, 0, 0.3);
+	
+
+}
+
+.fa-bars{
+	font-size: 2.1rem;
+	color:black;
+	cursor: pointer;
+	transform:translateY(25%);
+
+}
+
+.fa-bars:hover{
+	color:hotpink;
+
+}
+
+ul.menu li a {
+
+	color: blue;
+	letter-spacing: 0.1rem;
+    	padding:0.5rem 1rem;
+	transition:all 0.2s linear;
+	display:block;
+
+
+}
+
+
+ul.menu li a:hover {
+	color:black;
+	
+}
+
+/*background-color:lightpink;
+    	padding-left:5rem;
+	font-size:16px;*/
+
+.nav-header{
+
+	display:flex;
+	align-items:center;
+	padding:2rem;
+	justify-content:space-between;
+	padding:1rem;
+
+
+}
+
+/*important*/
+.menu{
+
+	height: 0;
+	overflow: hidden;
+	transition: all 0.3s linear;
+
+}
+
+.show-menu{
+
+	height: 15rem;
+
+}
+
+
+/*important*/
+
+@media (min-width: 800px){
+
+	.nav-main{
+
+		max-width: 1170px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem;
+	}
+
+	.nav-header{
+		padding: 0;
+
+	}
+
+	.fa-bars{
+		display:none;/* Important */
+		transform:translateY(25%);
+
+	}
+  
+  	.menu{
+
+  		height: auto;
+  		display: flex;/*important*/
+
+
+  	}
+  	.menu a {
+
+  		padding: 0;
+  		margin:0 0.5rem;
+  		display: flex;
+  		
+
+  	}
+
+  	/*important*/
+
+  	 ul.menu li a:hover {
+
+  	 	color:black;
+
+  	 	/*
+  		padding: 0;
+  		 important
+  			    background-color:transparent;
+	    padding-left:0px;
+	    */
+	    
+	    
+  	}
+
+}
+
+/*Footer*/
+
+
+#aboutMeLink{
+
+	text-align:center;
+	text-decoration: none;
+	outline:none;
+	font-size:15px;
+	color:white;
+	font-weight: bold;
+
+
+}
+#aboutMeLink a:link{
+
+	color:white;
+	text-decoration: none;
+
+}
+#aboutMeLink  a:visited{
+
+	color:white;
+	text-decoration: none;
+
+}
+
+#line{
+
+	border-top:2px solid white;
+}
+
+#date{
+
+	text-align:center;
+	font-size:10px;
+	color:white;
+	font-weight: bold;
+	padding:0;
+	margin:0;
+
+}
+
+/*Main Content*/
+
+#main-content{
+
+	position:fixed;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:500px;
+	background-color:rgba(255,255,255,0.7);
+	z-index: -1;
+	max-width:80%;
+	padding-top:25px;
+
+}
+
+#main-content img{
+
+
+
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  
+
+
+}
+
+#main-content p{
+
+
+	padding:10px 10px;
+	font-weight:bold;
+
+}

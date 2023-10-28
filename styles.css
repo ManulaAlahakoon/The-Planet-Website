@@ -1,0 +1,218 @@
+*{
+	box-sizing: boder-box;
+
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	}
+
+.background-video{
+
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+	filter: brightness(90%);
+
+
+}
+
+h1{
+
+	color: white;
+	font-size: 44px;
+	line-height: 0;
+	letter-spacing: 0.377em;
+	font-weight: 500;
+
+	justify-self:center;
+	align-self:center;
+
+
+	
+	
+}
+
+@media (max-width:800px){
+
+
+ h1{
+
+ 	font-size:30px;
+
+
+ }
+
+
+}
+
+header .grid {
+        
+	min-height:100vh;   
+	display: grid;
+	grid-template-rows:repeat(2,1fr);
+	
+	
+
+}
+
+nav{
+
+	align-self:end;
+
+	
+	
+
+
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+
+
+    /*The place-items property in CSS is shorthand for the 
+	  align-items and justify-items properties, combining them into a 
+	  single declaration.
+	  The property accepts dual values, the first for align-items and 
+	  the second for justify-items. As a refresher, align-items aligns content 
+	  along the vertical (column) axis whereas justify-items aligns along
+	   the horizontal (row) axis.*/
+
+	/*   display: grid;                                   
+		 place-items: start center;
+
+         EQUALS TO
+			
+		 display: grid;
+         align-items: start;
+         justify-items: center;
+        
+    */
+
+	/*   display: grid;
+  		 place-items: start;
+
+         EQUALS TO
+			
+		 isplay: grid;
+         align-items: start;
+         justify-items: start;
+        
+    */
+
+.preloader{
+
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: white;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	transition: 1s linear;
+}
+
+
+.Main-flex-box-items{
+
+	display: flex;
+	justify-content: center ;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 40px 80px;
+
+	background-color: black;
+
+	padding: 40px 10px 40px 10px;
+
+
+
+}
+
+
+.Main-flex-box-items img{
+
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+/*
+	width: 350px ;
+	height: 390px;
+	object-fit: contain;
+	
+*/
+}
+
+
+#open-button{
+
+	outline:none;
+	border:0;
+
+}
+
+
+/*Footer Style*/
+
+footer{
+
+	background-color: black;
+	margin:-20px 0;
+
+}
+
+#aboutMeLink{
+
+	text-align:center;
+	text-decoration: none;
+	outline:none;
+	font-size:15px;
+	color:white;
+	font-weight: bold;
+
+
+}
+#aboutMeLink a:link{
+
+	color:white;
+	text-decoration: none;
+
+}
+#aboutMeLink  a:visited{
+
+	color:white;
+	text-decoration: none;
+
+}
+
+#line{
+
+	border-top:2px solid white;
+}
+
+#date{
+
+	text-align:center;
+	font-size:10px;
+	color:white;
+	font-weight: bold;
+	padding:0;
+	margin:0;
+
+}

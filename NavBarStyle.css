@@ -1,0 +1,126 @@
+
+
+ul.menu{
+	list-style-type:none;
+
+}
+ul.menu li a {
+	text-decoration: none;
+
+}
+
+nav{
+	background-color:white;
+	box-shadow:0 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.fa-bars{
+	font-size: 2.1rem;
+	color:black;
+	cursor: pointer;
+	transform:translateY(25%);
+
+}
+
+.fa-bars:hover{
+	color:hotpink;
+
+}
+
+ul.menu li a {
+
+	color: blue;
+	letter-spacing: 0.1rem;
+    	padding:0.5rem 1rem;
+	transition:all 0.2s linear;
+	display:block;
+
+
+}
+
+
+ul.menu li a:hover {
+	color:black;
+	
+}
+
+.nav-header{
+
+	display:flex;
+	align-items:center;
+	padding:2rem;
+	justify-content:space-between;
+	padding:1rem;
+
+
+}
+
+/*important*/
+.menu{
+
+	height: 0;
+	overflow: hidden;
+	transition: all 0.3s linear;
+
+}
+
+.show-menu{
+
+	height: 15rem;
+
+}
+
+
+/*important*/
+
+@media (min-width: 800px){
+
+	.nav-main{
+
+		max-width: 1170px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem;
+	}
+
+	.nav-header{
+		padding: 0;
+
+	}
+
+	.fa-bars{
+		display:none;/* Important */
+		transform:translateY(25%);
+
+	}
+  
+  	.menu{
+
+  		height: auto;
+  		display: flex;/*important*/
+
+
+  	}
+  	.menu a {
+
+  		padding: 0;
+  		margin:0 0.5rem;
+  		display: flex;
+  		
+
+  	}
+
+  	/*important*/
+
+  	 ul.menu li a:hover {
+
+  	 	color:black;
+  		
+	    
+  	}
+
+}
+

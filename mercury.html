@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width , intial-scale=1.0">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link href="planetPagesStyle.css" rel="stylesheet">
+
+     <link href="modalStyle.css" rel="stylesheet">
+  <link href="signInStyle.css" rel="stylesheet">
+    <link href="modalStyle-SS.css" rel="stylesheet">
+  <link href="signInStyle-SS.css" rel="stylesheet">
+  <link href="modalStyle-TT.css" rel="stylesheet">
+
+  
+    <style>
+
+    .modal-body-TT a:link{
+
+      text-decoration: none;
+      color:black;
+
+
+
+
+    }
+
+    .modal-body-TT a:visited{
+
+      text-decoration:none;
+      color:black;
+    }
+
+    .planetsLinks{
+
+      text-align: center;
+      font-size: 25px;
+      font-family: sans-serif;
+
+
+    }
+
+textarea {
+    height: 4em;
+    width: 17em;
+}
+
+
+  </style>
+
+    <title>Universal Mimic</title>
+</head>
+<body>
+
+    <div class="preloader">
+
+        <img src="preloader/icons8-stargaze.gif" alt="preloader">
+
+    </div>
+
+
+        <nav>
+
+
+        <div class="nav-main">
+
+            <div class="nav-header">
+                <img src="Logo/Logo.svg" alt="Logo">
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+            <ul class="menu">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+
+            
+            <li>
+                
+                <a id="open-button-TT" href="#1">Soler System</a> 
+
+            </li>
+            
+
+            <li>
+                <a id="open-button-SS" href="#1">Contact Us</a>
+            </li>
+
+            <li>
+                <a id="open-button" href="#1">Sign in</a>
+ 
+            </li>
+
+
+        </ul>
+
+
+        </div>
+
+        
+
+    </nav>
+
+
+
+
+
+
+
+    <header>
+
+        
+        <video class="background-video" muted autoplay loop src="Video/Pexels Videos 3867.MP4" ></video>
+            
+
+
+        
+
+    </header>
+
+    <div id="main-content">
+
+        <img src="Pictures/Mercury.jpg" alt="Picture of Mercury">
+        <p>The smallest planet in our solar system has a big presence in our collective imagination. Scores of science fiction writers have been inspired by Mercury, including Isaac Asimov, C. S. Lewis, Ray Bradbury, Arthur C. Clarke, and H. P. Lovecraft. Television and film writers, too, have found the planet an ideal location for storytelling. In the animated television show "Invader Zim," Mercury is turned into a prototype giant spaceship by the extinct Martians. And in the 2007 film "Sunshine," the Icarus II spacecraft goes into orbit around Mercury to rendezvous with the Icarus I.</p>
+
+
+
+    </div>
+
+    <div id="modal" class="modal">
+
+<div class="modal-header"> 
+
+  <div class="title">
+    
+</div>
+  <button class="close-button">&#8855;</button>
+
+</div>
+
+
+
+<div class="modal-body">
+
+ <div class="form-box">
+<div class="button-box">
+  <div id="btn"></div>
+  <input type="button" id="btn1" class="btn-toggle" value="Log In">
+  <input type="button" id="btn2" class="btn-toggle" value="Sign Up">
+</div>
+
+  <!-- Here we can add social icons too-->
+  <div id="logIn" class="input-group">
+  <input type="text" class="input-field" placeholder="Username" required name="username">
+  <input type="password" class="input-field" placeholder="Password" required name="password">
+  <input type="checkbox" class="check-box" name="check"><span>Remember Password</span>
+  <input type="submit" class="submit-btn" value="Log In">
+  </div>
+
+  <div id="signUp" class="input-group">
+  <input type="text" class="input-field" placeholder="Username" required name="username">
+  <input type="email" class="input-field" placeholder="Email address" required name="email">
+  <input type="password" class="input-field" placeholder="Password" required name="password">
+  <input type="checkbox" class="check-box" name="check"><span>Agree to term and conditions</span>
+  <input type="submit" class="submit-btn" value="Sign Up">
+  </div>
+
+</div>
+
+</div>
+
+
+
+
+</div>
+
+
+<div id="overlay" ></div>
+
+
+
+<div id="modalSS" class="modalSS">
+
+<div class="modal-header-SS"> 
+
+    <div class="titleSS">
+</div>
+    <button class="close-button-SS">&#8855;</button>
+
+</div>
+
+
+
+<div class="modal-body-SS">
+
+ 
+
+
+ <div class="form-box-SS">
+
+<div id="logIn" class="input-group-SS">
+<input type ="text" class="input-field-SS" placeholder="Name" required name="name">
+<input type="email" id="contacFormEmail"class="input-field-SS" placeholder="Email address" required name="email">
+<textarea placeholder="Enter your message"></textarea>
+<input type="submit" class="submit-btn-SS" value="Send">
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+<div id="overlaySS" ></div>
+
+<div id="modalTT" class="modalTT">
+
+<div class="modal-header-TT"> 
+
+    <div class="titleTT">
+</div>
+    <button class="close-button-TT">&#8855;</button>
+
+</div>
+
+
+
+<div class="modal-body-TT">
+
+
+<a  href="Sun.html">
+  <p class="planetsLinks">Sun</p>
+</a>
+
+<a href="mercury.html">
+  <p class="planetsLinks">Mercury</p>
+</a>
+
+<a href="Venus.html">
+  <p class="planetsLinks">Venus</p>
+</a>
+
+<a href="Earth.html">
+  <p class="planetsLinks">Earth</p>
+</a>
+
+<a href="Mars.html">
+  <p class="planetsLinks">Mars</p>
+</a>
+
+<a href="Jupiter.html">
+  <p class="planetsLinks">Jupiter</p>
+</a>
+
+<a href="Saturn.html">
+  <p class="planetsLinks">Saturn</p>
+</a>
+
+<a href="Uranas.html">
+  <p class="planetsLinks">Uranus</p>
+</a>
+
+<a href="Neptune.html">
+  <p class="planetsLinks">Neptune</p>
+</a>
+
+</div>
+
+
+
+
+</div>
+
+
+<div id="overlayTT" ></div>
+
+
+
+
+
+
+<script src="modalLogic.js"></script>
+<script src="modalLogic-SS.js"></script>
+<script src="modalLogic-TT.js"></script>
+
+<script>
+
+const login = document.getElementById("logIn")
+const signup = document.getElementById("signUp")
+const button = document.querySelector("#btn")
+const btn1 = document.querySelector("#btn1")
+const btn2 = document.querySelector("#btn2")
+
+btn2.addEventListener("click",()=>{
+
+  button.style.left = "110px";
+  login.style.left = "-400px";
+  signup.style.left = "50px"
+
+
+})
+
+btn1.addEventListener("click",()=>{
+
+  button.style.left = "0";
+  login.style.left = "50px";
+  signup.style.left = "450px"
+
+
+})
+
+
+
+
+</script>
+
+    <footer>
+
+        <hr id="line">
+        <p id="aboutMeLink"><a href="about_me.html" target="_blank">About me</a></p>
+        <p id="date">2022 DEC</p>
+
+    </footer>
+   
+    
+    <script src="planetPagesLogic.js"></script>
+
+</body>
+</html>
